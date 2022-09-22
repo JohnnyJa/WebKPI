@@ -21,7 +21,8 @@ div
             */
 img
 {
-    margin: 10px;
+    margin: 0;
+    margin-top: 5px;
 }
 
 .header
@@ -119,11 +120,9 @@ img
 .credo-box
 {
     margin: 10px;
-    width: 500px;
-    height: 25px;
     border: 1px solid black;
     align-items: center;
-    padding-left: 1%;
+    padding: 10px;
 }
 
 .header, .footer
@@ -135,7 +134,7 @@ img
     justify-content: space-between;
 }
 
-.header h2, .footer h3
+.header h3, .footer h4
 {
-    margin: 0px;
+    margin: 5px;
 }
