@@ -1,12 +1,43 @@
-body
-{
+body {
     margin: 0px;
+    min-height: 100vh;
+    height: auto;
+
+
 }
 
-div
-{
-    display: flex;
+.main {
+    min-height: 85vh;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: 1fr;
+
 }
+
+.textbox-bar {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-template-rows: 1fr 1fr;
+}
+
+.content-page {
+    display: grid;
+    grid-template-columns:  1fr;
+    grid-template-rows: 1fr minmax(15vh, max-content);
+    grid-row-end: 1;
+    grid-column-start: 2;
+}
+
+.content {
+    
+    grid-column-end: 2;
+    min-height: 70vh;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+
 /* 
             Більше цікавинок про перший девіз ви можете знайти в пошукачі Google за посиланням нижче:
             Більше цікавинок про перший девіз ви можете знайти в пошукачі Google за посиланням нижче:
@@ -19,123 +50,87 @@ div
             Більше цікавинок про перший девіз ви можете знайти в пошукачі Google за посиланням нижче:
             Більше цікавинок про перший девіз ви можете знайти в пошукачі Google за посиланням нижче:
             */
-img
-{
+img {
     margin: 0;
     margin-top: 5px;
 }
 
-.header
-{
+.header {
+    display: flex;
     background-color: #4ea9de;
-    height: 10%;
-    min-height: 10vh;
+    min-height: 15vh;
 }
 
-.main-page
-{
-    width: 100%;
-    min-height: 90vh;
-    
-}
-
-.side-bar
-{
+.side-bar {
+    display: flex;
     align-items: center;
     justify-content: end;
     background-color: #358bbd;
-    width: 10%;
 }
 
-.side-bar li
-{
+.side-bar li {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.content-page
-{
+.footer {
     display: flex;
-    flex-direction: column;
-    width: 90%;
-}
 
-.content
-{
-    background-color: #7fdff5;
-    width: 100%;
-    height: auto;
-    display: flex;
-    min-height: 80vh;
-    flex-grow: 2;
-}
-
-.footer
-{
     background-color: #25a9f5;
-    height: auto;
-    min-height: 10vh;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
-.main-text
-{
+.main-text {
+    display: flex;
+
+    background-color: #7fdff5;
     align-items: center;
     justify-content: center;
-    width: 75%;
-    height: auto;
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 
-.textbox-bar
-{
-    width: 25%;
-    min-height: 80vh;
-    height: auto;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 0px;
-}
+.textbox {
+    display: flex;
 
-.textbox
-{
-    flex-grow: 2;
     justify-content: center;
     flex-direction: column;
-    width: 95%;
     padding-left: 5%;
 }
 
-#textbox-1
-{
+#textbox-1 {
     top: 0;
     background-color: #1eb7d9;
+    grid-row-start: 1;
+    grid-row-end: 2;
 
 }
 
-#textbox-2
-{
+#textbox-2 {
     bottom: 0;
     background-color: #11aacc;
-    
+    grid-row-start: 2;
+    grid-row-end: 3;
+
 }
 
-.credo-box
-{
+.credo-box {
     margin: 10px;
     border: 1px solid black;
     align-items: center;
     padding: 10px;
 }
 
-.header, .footer
-{
+.header,
+.footer {
     padding-left: 3%;
     padding-right: 3%;
-    width: 94%;
     align-items: center;
     justify-content: space-between;
 }
 
-.header h3, .footer h4
-{
+.header h3,
+.footer h4 {
     margin: 5px;
 }

@@ -1,12 +1,21 @@
-body
-{
+body {
     margin: 0px;
 }
 
-div
-{
-    display: flex;
+.page {
+    min-height: 100vh;
+    border-spacing: 0;
 }
+
+p {
+    margin: 0;
+}
+
+.page td {
+    padding: 0;
+}
+
+
 /* 
             Більше цікавинок про перший девіз ви можете знайти в пошукачі Google за посиланням нижче:
             Більше цікавинок про перший девіз ви можете знайти в пошукачі Google за посиланням нижче:
@@ -19,123 +28,84 @@ div
             Більше цікавинок про перший девіз ви можете знайти в пошукачі Google за посиланням нижче:
             Більше цікавинок про перший девіз ви можете знайти в пошукачі Google за посиланням нижче:
             */
-img
-{
+img {
     margin: 0;
     margin-top: 5px;
 }
 
-.header
-{
+.header {
     background-color: #4ea9de;
     height: 10%;
     min-height: 10vh;
 }
 
-.main-page
-{
-    width: 100%;
-    min-height: 90vh;
-    
+#header,
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.side-bar
-{
-    align-items: center;
-    justify-content: end;
+.side-bar {
+    text-align: end;
+    vertical-align: middle;
+    padding-right: 10px;
     background-color: #358bbd;
     width: 10%;
 }
 
-.side-bar li
-{
+.side-bar li {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.content-page
-{
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-}
-
-.content
-{
-    background-color: #7fdff5;
-    width: 100%;
-    height: auto;
-    display: flex;
-    min-height: 80vh;
-    flex-grow: 2;
-}
-
-.footer
-{
+.footer {
     background-color: #25a9f5;
     height: auto;
     min-height: 10vh;
 }
 
-.main-text
-{
-    align-items: center;
-    justify-content: center;
-    width: 75%;
+.main-text {
+    text-align: center;
+    vertical-align: middle;
+    background-color: #7fdff5;
+    width: 70%;
     height: auto;
 }
 
-.textbox-bar
-{
-    width: 25%;
-    min-height: 80vh;
-    height: auto;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 0px;
+.textbox {
+    padding-left: 10px;
+    text-align: start;
+    vertical-align: middle;
 }
 
-.textbox
-{
-    flex-grow: 2;
-    justify-content: center;
-    flex-direction: column;
-    width: 95%;
-    padding-left: 5%;
-}
-
-#textbox-1
-{
-    top: 0;
+#textbox-1 {
     background-color: #1eb7d9;
 
 }
 
-#textbox-2
-{
-    bottom: 0;
+#textbox-2 {
     background-color: #11aacc;
-    
+
 }
 
-.credo-box
-{
+.credo-box {
     margin: 10px;
     border: 1px solid black;
     align-items: center;
     padding: 10px;
 }
 
-.header, .footer
-{
+.header,
+.footer {
     padding-left: 3%;
     padding-right: 3%;
     width: 94%;
-    align-items: center;
-    justify-content: space-between;
+    text-align: middle;
+    vertical-align: middle;
 }
 
-.header h3, .footer h4
-{
+.header h3,
+.footer h4 {
     margin: 5px;
 }
