@@ -1,21 +1,13 @@
 body {
     margin: 0px;
-    min-height: 150vh;
+    min-height: 100vh;
     height: auto;
-    font-size: 24px;
-
-}
-
-.header {
-    display: flex;
-    background-color: #4ea9de;
-    min-height: 15vh;
 }
 
 .main {
-    min-height: 135vh;
+    min-height: 85vh;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 8fr;
     grid-template-rows: 1fr;
 
 }
@@ -29,38 +21,31 @@ body {
 
 .content-page {
     display: grid;
-    grid-template-columns:  1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr minmax(15vh, max-content);
-    grid-row-end: 2;
+    grid-row-end: 1;
     grid-column-start: 2;
 }
 
 .content {
-    
+
     grid-column-end: 2;
     min-height: 70vh;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
 }
 
 
-/* 
-            Більше цікавинок про перший девіз ви можете знайти в пошукачі Google за посиланням нижче:
-            Більше цікавинок про перший девіз ви можете знайти в пошукачі Google за посиланням нижче:
-            Більше цікавинок про перший девіз ви можете знайти в пошукачі Google за посиланням нижче:
-            Більше цікавинок про перший девіз ви можете знайти в пошукачі Google за посиланням нижче:
-            Більше цікавинок про перший девіз ви можете знайти в пошукачі Google за посиланням нижче:
-            Більше цікавинок про перший девіз ви можете знайти в пошукачі Google за посиланням нижче:
-            Більше цікавинок про перший девіз ви можете знайти в пошукачі Google за посиланням нижче:
-            Більше цікавинок про перший девіз ви можете знайти в пошукачі Google за посиланням нижче:
-            Більше цікавинок про перший девіз ви можете знайти в пошукачі Google за посиланням нижче:
-            Більше цікавинок про перший девіз ви можете знайти в пошукачі Google за посиланням нижче:
-            */
 img {
     margin: 0;
     margin-top: 5px;
 }
 
+.header {
+    display: flex;
+    background-color: #4ea9de;
+    min-height: 15vh;
+}
 
 .side-bar {
     display: flex;
@@ -70,8 +55,8 @@ img {
 }
 
 .side-bar li {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .footer {
@@ -91,6 +76,8 @@ img {
     grid-column-start: 1;
     grid-column-end: 2;
 }
+
+
 
 .textbox {
     display: flex;
@@ -134,4 +121,43 @@ img {
 .header h3,
 .footer h4 {
     margin: 5px;
+}
+
+@media only screen and (max-device-width: 768px) {
+    body {
+        min-height: 150vh;
+    }
+    
+    .header {
+        min-height: 5vh;
+    }
+    
+    .main {
+        font-size: 35px;
+        min-height: 145vh;
+        grid-template-columns: 1fr 4fr;
+    }
+    .content-page {
+        grid-template-rows: 1fr minmax(5vh, max-content);
+        grid-row-end: 2;
+    }
+    
+    .content {
+        grid-template-columns: 2fr 1fr;
+    }
+    
+    img {
+        width: 100%;
+    }
+    
+    .side-bar li {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .header,
+    .footer {
+        font-size: 27px;
+    }
+
 }

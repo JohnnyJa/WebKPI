@@ -1,0 +1,275 @@
+body header,
+footer,
+div {
+    display: flex;
+}
+
+body {
+    background-color: #E1B7BF;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+header {
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Comfortaa', cursive;
+    color: #846790
+}
+
+#title {
+    justify-content: center;
+    align-items: center;
+}
+
+#title h2 {
+    font: normal normal normal bold xx-large 'Noto Sans', sans-serif;
+    color: #C262AF;
+}
+
+#main {}
+
+.service-block {
+    margin: 1px;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+
+    border-radius: 10px;
+    box-shadow: 0 0 15px -5px;
+}
+
+
+.service-block p,
+a,
+h1 {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.service-block h1 {
+    font-weight: 400;
+    text-align: center;
+}
+
+.service-block p {
+    margin: 0 3%;
+    text-align: justify;
+    text-align-last: center;
+}
+
+.service-block a {
+    display: flex;
+    gap: 5px;
+    margin-top: 5%;
+    text-decoration: none;
+    align-items: center;
+    color: #C765B7;
+}
+
+#blue-line {
+    position: absolute;
+    min-height: 20vh;
+    background-color: blue;
+  
+    z-index: -1;
+}
+
+footer {
+    background-color: #333333;
+    min-height: 10vh;
+    color: white;
+    justify-content: center;
+        align-items: center;
+}
+
+
+@media only screen and (min-device-width: 800px) {
+
+
+    body {
+        min-height: 110vh;
+    }
+
+    header {
+        min-height: 5vh;
+    }
+
+    #menu-ico {
+        height: 32px;
+    }
+
+    #main {
+        position: relative;
+        padding: 0 1%;
+        flex-grow: 2;
+        margin: 2%;
+        justify-content: center;
+        align-items: center;
+        gap: 3%;
+    }
+
+    .service-block {
+        max-width: min-content;
+        height: fit-content;
+        padding: 1% 1% 5% 1%;
+
+    }
+
+    .service-block h1 {
+        font-size: larger;
+    }
+
+    .service-block p {
+        font-size: medium;
+    }
+
+    
+
+    #service-top {
+        align-self: flex-start;
+    }
+
+    #service-middle {
+        align-self: center;
+    }
+
+    #service-bottom {
+        align-self: flex-end;
+    }
+
+    .arrow-ico {
+        height: 16px;
+    }
+
+    #blue-line{
+        top:40%;
+        left:-2%;
+        right:-2%;
+    }
+    
+}
+
+@media only screen and (max-device-width: 800px) {
+
+
+    header{
+        font-size: 30px;
+    }
+
+    #title{
+        margin-bottom: 40px;
+    }
+
+    #title h2{
+        font-size: 42px;
+    }
+
+    #main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .service-block {
+        justify-content: space-around;
+        width: 70vw;
+        min-height: 60vh;
+        padding: 30px;
+        margin-bottom: 15px;
+    }   
+    .service-img{
+        width:100%;
+    }
+
+    .service-block h1{
+        font-size: 40px;
+    }
+
+    .service-block p{
+        font-size:32px;
+    }
+
+    .service-block a{
+        font-size: 38px;
+        margin-bottom: 20%;
+    }
+
+    #service-top{
+        position: relative;
+    }
+
+    #blue-line{
+        top:35%;
+        width: 100vw;
+    }
+
+    footer{
+        font-size: 28px;
+        
+    }
+}
+
+/* body{
+    background-color: #E1B7BF;
+    display: flex;
+    flex-direction: column;
+}
+
+div{
+    display: flex;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header h2{
+    font-family: 'Comfortaa', cursive;
+    font-size: 50px;
+    color: #5B437B;
+}
+
+#menu-ico{
+    width: 50px;
+    height: 50px;
+}
+
+#title{
+    justify-content: center;
+    align-items: center;
+}
+
+#title h2{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 50px;
+    color:#C262AF;
+}
+
+#main{
+    flex-wrap: wrap;
+    flex-grow:2 ;
+}
+
+.service-block{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+    background-color: white;
+    flex-direction: column;
+    padding: 15px;
+    box-shadow: 0 0 10px -5px;
+    border-radius: 15px;
+    max-width:20%;
+}
+
+.service-img{
+    width: 600px;
+}
+
+footer{
+    min-height: 10vh;
+} */
