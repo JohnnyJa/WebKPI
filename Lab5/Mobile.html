@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <div class="header">
+    <div id="header">
         <div class="credo-box">
             <h3>
                 Якщо Бог хоче покарати людину, він виконує її бажання.
@@ -19,7 +19,7 @@
         </p>
     </div>
     <div class="main">
-        <div class="side-bar">
+        <div id="side-bar">
             <ol>
                 <li><a href="DemonstrateFlex.html">Демонстрація Flexbox</a></li>
                 <li><a href="DemonstrateGrid.html">Демонстрація Grid</a></li>
@@ -30,10 +30,12 @@
         <div class="content-page">
             <div class="content">
 
-                <div class="main-text">
-                    <p>
-                        Багато цікавої інформації
-                    </p>
+                <div id="main-text">
+                    <form name="FindMinForm" id="FindMinForm" autocomplete="off"  action="" >
+                        <label for="">Enter 10 numbers</label>
+                        <input type="text" name="numbers">
+                        <input type="button"  onclick="FindNumOfMinFromForm()" value="Submit">
+                    </form>
                 </div>
                 <div class="textbox-bar">
 
@@ -43,7 +45,6 @@
                             А ось фото людини, що сказала перший афоризм. <br>
                             До речі, це Оскар Уайльд. <br>
                             <img src="img\Оскар Уайльд.jpg" alt="">
-
                         </p>
                     </div>
                     <div class="textbox" id="textbox-2">
@@ -56,7 +57,7 @@
                     </div>
                 </div>
             </div>
-            <div class="footer">
+            <div id="footer">
                 <div class="credo-box">
                     <h4>
                         Хто керує минулим, той керує й майбутнім.
@@ -64,11 +65,13 @@
                 </div>
                 <p>
                     Зовсім інший цікавий текст про девіз лівіше.
+                
                 </p>
             </div>
         </div>
 
     </div>
+    <script src="./scripts/Scripts.js"></script>
 </body>
 
 </html>

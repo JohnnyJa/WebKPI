@@ -1,0 +1,162 @@
+body {
+    margin: 0px;
+    min-height: 100vh;
+    height: auto;
+}
+
+.main {
+    min-height: 85vh;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: 1fr;
+
+}
+
+.textbox-bar {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-template-rows: 1fr 1fr;
+}
+
+.content-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr minmax(15vh, max-content);
+    grid-row-end: 1;
+    grid-column-start: 2;
+}
+
+.content {
+
+    grid-column-end: 2;
+    min-height: 70vh;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+img {
+    margin: 0;
+    margin-top: 5px;
+}
+
+#header {
+    display: flex;
+    background-color: #4ea9de;
+    min-height: 15vh;
+}
+
+#side-bar {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: #358bbd;
+}
+
+#side-bar li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#footer {
+    display: flex;
+
+    background-color: #25a9f5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#main-text {
+    display: flex;
+    flex-direction: column;
+    background-color: #7fdff5;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+
+
+.textbox {
+    display: flex;
+
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 5%;
+}
+
+#textbox-1 {
+    top: 0;
+    background-color: #1eb7d9;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+
+#textbox-2 {
+    bottom: 0;
+    background-color: #11aacc;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+}
+
+.credo-box {
+    margin: 10px;
+    border: 1px solid black;
+    align-items: center;
+    padding: 10px;
+}
+
+#header,
+#footer {
+    padding-left: 3%;
+    padding-right: 3%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header h3,
+#footer h4 {
+    margin: 5px;
+}
+
+@media only screen and (max-device-width: 768px) {
+    body {
+        min-height: 150vh;
+    }
+    
+    #header {
+        min-height: 5vh;
+    }
+    
+    .main {
+        font-size: 35px;
+        min-height: 145vh;
+        grid-template-columns: 1fr 4fr;
+    }
+    .content-page {
+        grid-template-rows: 1fr minmax(5vh, max-content);
+        grid-row-end: 2;
+    }
+    
+    .content {
+        grid-template-columns: 2fr 1fr;
+    }
+    
+    img {
+        width: 100%;
+    }
+    
+    #side-bar li {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #header,
+    #footer {
+        font-size: 27px;
+    }
+
+}
