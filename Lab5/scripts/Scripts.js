@@ -150,7 +150,7 @@ function createList() {
 
     }
 
-    window.addEventListener("load", removeList());
+    window.addEventListener("load", localStorage.clear());
 }
 
 function getListFromForm(div) {
@@ -173,17 +173,6 @@ function getListFromForm(div) {
 
     }
 
-}
-
-function removeList(){
-    for(var i = 0; i < localStorage.length; i++)
-    {
-        key = localStorage.key(i);
-        if(key.split(' ')[0] == li)
-        {
-            removeItem(key);
-        }
-    }
 }
 
 function createForm(div) {
